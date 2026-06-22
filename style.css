@@ -13,7 +13,7 @@ body{
     background-color: #1f2937;
     width: 100%;
     height: 10vh;
-
+    font-family: roboto, sans-serif;
     .navbar{
         display: flex;
         justify-content:space-between;
@@ -25,8 +25,12 @@ body{
             margin-left: 5rem;
             img{
                 width: 60px;
-                height: 8
-                0px;
+                height: 80px;
+                cursor: pointer;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
         .nav-components{
@@ -66,6 +70,7 @@ body{
     background-color: #1f2937;
     width: 100%;
     height: 40vh;
+    font-family: roboto, sans-serif;
     display: flex;
         justify-content:space-around;
         align-items: center;
@@ -110,6 +115,7 @@ body{
 
                 &:hover{
                     background-color: rgb(29, 185, 84);
+                    color: black;
                 }
             }
         }
@@ -120,6 +126,189 @@ body{
                 height: auto;
                 border-radius: 10px;
                 margin-right: 5rem;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+            }
+            &:hover{
+                transform: scale(1.05);
+                transition: all 0.3s ease-in-out;
             }
         }
+}
+
+
+#thirdCanvas{
+    background-color: #ffffff;
+    width: 100%;
+    height: 50vh;
+    font-family: roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .Albums{
+        display: flex;
+        gap: 4rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 4px solid #3882f6;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        h2{
+            color: #1f2937;
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
+    .albums-header{
+        color: #000000;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .WatchTheThrone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+
+    .Heartbreaks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+
+    .LateRegistration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+
+    .Yeezus{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+       
+    }
+}
+
+#fourthCanvas{
+    background-color: #e5e7eb;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    .quote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: roboto, sans-serif;
+        color: #1f2937;
+        font-size: 25px;
+        font-weight: 300;
+        width: 80%;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .quote-author{
+        font-family: roboto, sans-serif;
+        color: #1f2937;
+        font-size: 15px;
+        font-weight: 900;
+        margin-top: 1rem;
+    }
+}
+
+#fifthCanvas{
+    background-color: white;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 80%;
+        width: 60%;
+        background-color: #3882f6;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: white;
+        font-family: roboto, sans-serif;
+
+        .box1{
+            display: flex;
+            justify-content: flex-start;
+            align-items: start;
+            flex-direction: column;
+            margin-left: 5rem;
+        }
+
+        .box2{
+           button{
+                padding: 0.5rem 1rem;
+                background-color: #3882f6;
+                border-radius: 5px;
+                border: white solid 2px;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                color: white;
+                margin-right: 5rem;
+
+                &:hover{
+                    background-color: rgb(29, 185, 84);
+                    color: black;
+                }
+           }
+        }
+    }
+
+   
+}
+
+footer{
+    background-color: #1f2937;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: roboto, sans-serif;
 }
